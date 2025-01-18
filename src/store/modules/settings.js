@@ -1,7 +1,7 @@
 export default {
   namespaced: true,
   state: {
-    theme: "light", // 'light' or 'dark'
+    theme: "light", 
   },
   mutations: {
     SET_THEME(state, theme) {

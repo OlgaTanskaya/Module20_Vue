@@ -4,8 +4,8 @@ import settings from "./modules/settings";
 
 const store = createStore({
   modules: {
-    tasks, // Задачи
-    settings, // Настройки
+    tasks, 
+    settings, 
   },
 });
 

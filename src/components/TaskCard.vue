@@ -20,10 +20,10 @@ export default {
   },
   methods: {
     onEdit() {
-      this.$emit("edit", this.task); // Передаем задачу в родительский компонент
+      this.$emit("edit", this.task); 
     },
     onDelete() {
-      this.$emit("delete", this.task.id); // Удаляем задачу
+      this.$emit("delete", this.task.id); 
     },
   },
 };

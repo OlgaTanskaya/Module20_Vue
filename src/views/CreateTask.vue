@@ -16,7 +16,7 @@ export default {
     ...mapActions("tasks", ["addTask"]),
     handleTaskAdd(task) {
       this.addTask(task).then(() => {
-        this.$router.push("/"); // Перенаправление на главную страницу
+        this.$router.push("/"); 
       });
     },
   },

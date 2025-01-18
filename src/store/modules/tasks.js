@@ -29,7 +29,7 @@ export default {
   },
   actions: {
     async addTask({ commit }, task) {
-      // Проверка, что поля задачи заполнены корректно
+      
       console.log(commit);
       console.log(task);
       if (!task.title || !task.description || !task.priority || !task.dueDate) {
@@ -41,8 +41,8 @@ export default {
       setTimeout(() => {
         const newTask = {
           ...task,
-          id: Date.now(), // Генерация уникального ID
-          status: "new", // Установка статуса по умолчанию
+          id: Date.now(),
+          status: "new", 
         };
         commit("ADD_TASK", newTask);
         commit("SET_LOADING", false);
